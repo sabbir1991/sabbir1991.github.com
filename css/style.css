@@ -44,6 +44,7 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 }
 .gallery .photos .thumbnail_container{
 	position:relative;
+    background:#eee;
 }
 .gallery .photos .thumbnail_container a.thumbnail{
 	position:absolute;
@@ -52,4 +53,14 @@ h1,h2,h3,h4,h5,h6,p,a,ul,li{
 	width:75px;
 	height:75px;
 	border:1px solid #fff;
+}
+
+#debug{
+	position:absolute;
+	left:0;bottom:0;
+}
+
+.sorting .selected{
+	background:#222;
+	color:#fafafa;
 }
