@@ -2,8 +2,9 @@
 
 var thumbnailSpacing = 15;
 
+/* When DOM is ready */
+
 $(document).ready(function(){
-  $('#debug').html();
    $(".thumbnail_container a.thumbnail").addClass("showMe").addClass("fancybox").attr("rel","group");
 
    $("a.sortLink").click(function(e){
@@ -19,9 +20,10 @@ $(document).ready(function(){
    
    setInterval('resizeGallery()',750);
   	
-   positioningThumbnail()
+   positioningThumbnail();
 });
 
+/* Sorting the gallery image according to his category */
 
 function sortingThumbnail(keyword){ 
    	 $(".thumbnail_container a.thumbnail").each(function(){
@@ -41,6 +43,7 @@ function sortingThumbnail(keyword){
    	positioningThumbnail(); 
 }
 
+/* Resize the gallery for responsive */
 
 function resizeGallery(){
 
@@ -59,6 +62,7 @@ function resizeGallery(){
 
 }
 
+/* Posiutioning the thumbnail at the initial state */
 
 function positioningThumbnail(){
 
@@ -108,6 +112,8 @@ function positioningThumbnail(){
 
    $(".sorting").css({'width':newWidth+'px'});
 }
+
+/* Fancybox plugin */
 
 function applyFancybox(){
 	$("a.fancybox[rel='group']").fancybox({
